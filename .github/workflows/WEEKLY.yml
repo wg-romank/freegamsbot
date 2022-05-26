@@ -1,11 +1,11 @@
 name: Weekly Gams
 on:
   schedule:
-    - cron: 36 14 * * *
+    - cron: 40 14 * * *
 
 jobs:
   create_issue:
-    name: Create team sync issue
+    name: Grab free gams
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v3
@@ -15,7 +15,6 @@ jobs:
             cache: 'pip'
         - name: Install dependencies
           run: pip install -r requirements.txt
-        - name: Grab free gams
-          run: python bot.py
+        - run: python bot.py
           env:
             DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN}}
