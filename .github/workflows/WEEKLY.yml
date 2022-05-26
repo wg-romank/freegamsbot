@@ -1,6 +1,9 @@
 name: Weekly Gams
 
 on:
+  push:
+    tags:
+      - trigger.**
   schedule:
     - cron: '55 14 * * *'
 

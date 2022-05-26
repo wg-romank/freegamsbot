@@ -50,12 +50,14 @@ async def do_its_thing():
         message_channel = bot.get_channel(target_channel_idXOX)
         print(f"Got channel {message_channel}")
         # await message_channel.send(getTitles("xox"))
-        print(f"mc {getTitles("xox")} {message_channel}")
+        t = getTitles("xox")
+        print(f"mc {t} {message_channel}")
 
         message_channel = bot.get_channel(target_channel_idMIN)
         print(f"Got channel {message_channel}")
         # await message_channel.send(getTitles("min"))
-        print(f"mc {getTitles("min")} {message_channel}")
+        t = getTitles("min")
+        print(f"mc {t} {message_channel}")
 
         await bot.close()
 
