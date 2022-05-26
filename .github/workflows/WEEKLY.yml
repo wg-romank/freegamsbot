@@ -1,7 +1,7 @@
 name: Weekly Gams
 on:
   schedule:
-    - cron: 2 * * * *
+    - cron: 36 14 * * *
 
 jobs:
   create_issue:
