@@ -1,10 +1,11 @@
 name: Weekly Gams
+
 on:
   schedule:
-    - cron: 40 14 * * *
+    - cron: '55 14 * * *'
 
 jobs:
-  create_issue:
+  grab_gams:
     name: Grab free gams
     runs-on: ubuntu-latest
     steps:
