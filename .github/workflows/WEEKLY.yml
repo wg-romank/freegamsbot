@@ -8,14 +8,14 @@ jobs:
     name: Create team sync issue
     runs-on: ubuntu-latest
     steps:
-        steps:
-          - uses: actions/checkout@v3
-          - uses: actions/setup-python@v3
-            with:
-              python-version: '3.10'
-              cache: 'pip'
-          - run: pip install -r requirements.txt
-          - name: Grab free gams
-            run: python bot.py
-            env:
-              DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN}}
+        - uses: actions/checkout@v3
+        - uses: actions/setup-python@v3
+          with:
+            python-version: '3.10'
+            cache: 'pip'
+        - run: pip install -r requirements.txt
+        - name: Install dependencies
+        - name: Grab free gams
+        - run: python bot.py
+          env:
+            DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN}}
