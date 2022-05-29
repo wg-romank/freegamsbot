@@ -4,8 +4,6 @@ on:
   push:
     tags:
       - trigger.**
-  schedule:
-    - cron: '55 14 * * *'
 
 jobs:
   grab_gams:
